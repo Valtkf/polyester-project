@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
 import NavItems from "./NavItems.tsx";
+import ResponsiveMenu from "./ResponsiveMenu.tsx";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,6 +45,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <ResponsiveMenu isMenuOpen={isMenuOpen} />
     </>
   );
 };
