@@ -8,7 +8,7 @@ export default {
         secondary: "#ea580c",
         tartiary: "#16a34a",
         hovertartiary: "#22c55e",
-        cyan: "#0891b2",
+        cyan: "#22d3ee",
       },
     },
   },
