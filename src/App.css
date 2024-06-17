@@ -10,3 +10,11 @@ body {
 nav {
   z-index: 10001 !important;
 }
+
+.gradientBg {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(148, 241, 246) 0%,
+    rgb(148, 189, 246) 100.7%
+  );
+}
