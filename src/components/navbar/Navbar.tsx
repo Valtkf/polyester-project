@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { FaBars } from "react-icons/fa";
+import { TbMenuDeep } from "react-icons/tb";
 import { FaXmark } from "react-icons/fa6";
-import NavItems from "./NavItems.tsx";
-import ResponsiveMenu from "./ResponsiveMenu.tsx";
+import NavItems from "./NavItems";
+import ResponsiveMenu from "./ResponsiveMenu";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,21 +13,21 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-white md:px-14 p-4 max-w-screen-2xl mx-auto text-primary fixed top-0 right-0 left-0">
+      <nav className="bg-white md:px-14 p-4 max-w-screen-2xl mx-auto text-primary fixed top-0 right-0 left-0 z-50">
         <div className="text-lg container mx-auto flex justify-between items-center font-medium">
-          <div className="flex space-x-14 items-center">
+          <div className="flex items-center">
             <a
               href="/"
               className="text-2xl font-semibold flex items-center text-primary"
             >
               Logo
             </a>
+          </div>
+          <div className="flex items-center ml-auto space-x-12">
             <ul className="md:flex space-x-12 hidden">
               <NavItems />
             </ul>
-          </div>
-          <div className="space-x-12 hidden md:flex items-center">
-            <button className="bg-tartiary hover:bg-hovertartiary hover:text-white active:bg-tartiary font-medium py-2 px-4 transition-all duration-300 rounded">
+            <button className="bg-stonedark hover:bg-stone text-white active:bg-stonedark font-medium py-2 px-4 transition-all duration-300 rounded hidden md:block">
               Contact
             </button>
           </div>
@@ -39,7 +39,7 @@ const Navbar = () => {
               {isMenuOpen ? (
                 <FaXmark className="w-6 h-6 text-primary" />
               ) : (
-                <FaBars className="w-6 h-6 text-primary" />
+                <TbMenuDeep className="w-8 h-8 text-primary" />
               )}
             </button>
           </div>

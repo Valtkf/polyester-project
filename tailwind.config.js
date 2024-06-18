@@ -12,6 +12,8 @@ export default {
         tartiary: "#16a34a",
         hovertartiary: "#22c55e",
         cyan: "#22d3ee",
+        stonedark: "#292524",
+        stone: "#44403c",
       },
       backgroundImage: {
         hero: "url(./images/bghomepage.jpeg)",
