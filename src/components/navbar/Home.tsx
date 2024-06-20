@@ -1,4 +1,8 @@
 import { RiCompasses2Line } from "react-icons/ri";
+import { GiPaintBrush } from "react-icons/gi";
+import { IoMdArrowRoundForward } from "react-icons/io";
+import { RiToolsFill } from "react-icons/ri";
+import { GoMail } from "react-icons/go";
 
 const Home = () => {
   return (
@@ -21,16 +25,69 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto">
-        <div className="mt-[80px] xl:mt-[200px] relative z-20 grid grid-cols-1 gap-12 xl:grid-cols-3">
-          <div className="text-center bg-pink-200 text-xl font-semibold font-playfair">
-            <div style={{ color: "orange" }} className="flex justify-center ">
+      <div className="grid grid-cols-1 gap-12 xl:grid-cols-3 mt-[80px] xl:mt-[200px] relative z-20 pr-12 pl-12 font-playfair">
+        <div className="container mx-auto">
+          <div className="text-center text-xl font-semibold ">
+            <div style={{ color: "#f59e0b" }} className="flex justify-center ">
               <RiCompasses2Line size={40} />
             </div>
-            <h2>Un Projet à plannifier ?</h2>
+            <h2 className="mb-5">Un Projet à plannifier ?</h2>
+            <p className="mb-5 max-w-md mx-auto font-normal text-lg text-gray-700">
+              Nous vous accompagnerons dans la réalisation du produit de vos
+              rêves grâce à notre expertise.
+            </p>
+            <a
+              href="#"
+              className="text-xl font-normal flex justify-center gap-2 font-sans hover:text-gray-400"
+            >
+              A Propos
+              <div style={{ color: "#f59e0b" }} className="flex items-center">
+                <IoMdArrowRoundForward size={20} />
+              </div>
+            </a>
           </div>
-          <div className="text-center bg-pink-200">02</div>
-          <div className="text-center bg-pink-200">03</div>
+        </div>
+        <div className="container mx-auto">
+          <div className="text-center text-xl font-semibold text-gray-700">
+            <div style={{ color: "#f59e0b" }} className="flex justify-center ">
+              <GiPaintBrush size={40} />
+            </div>
+            <h2 className="mb-5">Notre savoir faire</h2>
+            <p className="mb-5 max-w-md mx-auto font-normal text-lg">
+              Découvrez les nombreuses réalisations que nous avons effectué pour
+              les clients qui nous ont fait confiance
+            </p>
+            <a
+              href="#"
+              className="text-xl font-normal flex justify-center gap-2 font-sans hover:text-gray-400"
+            >
+              Galerie Photo
+              <div style={{ color: "#f59e0b" }} className="flex items-center">
+                <IoMdArrowRoundForward size={20} />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div className="container mx-auto">
+          <div className="text-center text-xl font-semibold">
+            <div style={{ color: "#f59e0b" }} className="flex justify-center ">
+              <RiToolsFill size={45} />
+            </div>
+            <h2 className="mb-5">Passer à L'action</h2>
+            <p className="mb-5 max-w-md mx-auto font-normal text-lg text-gray-700">
+              Prenez contact avec notre équipe afin que nous puissions vous
+              accompagner.
+            </p>
+            <a
+              href="#"
+              className="text-xl font-normal flex justify-center gap-2 font-sans hover:text-gray-400"
+            >
+              Nous Contacter
+              <div style={{ color: "#f59e0b" }} className="flex items-center">
+                <GoMail size={25} />
+              </div>
+            </a>
+          </div>
         </div>
       </div>
       <div className="h-[3000px]"></div>
