@@ -8,7 +8,7 @@ const ResponsiveMenu: React.FC<ResponsiveMenuProps> = ({ isMenuOpen }) => {
   const navItems = [
     { link: "Accueil", path: "home" },
     { link: "Présentation", path: "presentation" },
-    { link: "Nos Produits", path: "produits" },
+    { link: "Galerie", path: "galerie" },
     { link: "Nous Contacter", path: "contact" },
   ];
 
