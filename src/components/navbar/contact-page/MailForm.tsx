@@ -1,5 +1,7 @@
-import React from "react";
-
 export default function MailForm() {
-  return <div>MailForm</div>;
+  return (
+    <div>
+      <h1 className="text-2xl font-semibold">Mail Form</h1>
+    </div>
+  );
 }

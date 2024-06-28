@@ -4,10 +4,12 @@ import { IoMdArrowRoundForward } from "react-icons/io";
 import { RiToolsFill } from "react-icons/ri";
 import { GoMail } from "react-icons/go";
 import { FaPhone } from "react-icons/fa6";
+import Navbar from "./Navbar";
 
 const Home = () => {
   return (
     <div className="max-w-screen-2xl mt-18 overflow-hidden">
+      <Navbar />
       <div className="hero h-[540px] xl:h-[640px] w-full bg-hero  bg-cover bg-fixed bg-no-repeat  xl:rounded-bl-[290px] relative z-10">
         <div className="flex flex-col justify-between items-center gap-10 text-center">
           <div>
