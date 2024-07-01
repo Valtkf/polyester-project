@@ -5,6 +5,7 @@ import { RiToolsFill } from "react-icons/ri";
 import { GoMail } from "react-icons/go";
 import { FaPhone } from "react-icons/fa6";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -122,12 +123,14 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <button
-                type="button"
-                className="mt-20 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-lg px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-              >
-                Envoyer un mail
-              </button>
+              <div className="mt-20 flex justify-center">
+                <Link
+                  className=" text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-lg px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                  to="/mailform"
+                >
+                  Envoyer un mail
+                </Link>
+              </div>
             </div>
             <div className="max-w-[453px] order-1 xl:order-none">
               <img

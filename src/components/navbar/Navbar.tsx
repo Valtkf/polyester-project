@@ -17,20 +17,19 @@ const Navbar = () => {
       <nav className="bg-white md:px-14 p-4 max-w-screen-2xl mx-auto text-primary fixed top-0 right-0 left-0 z-50">
         <div className="text-lg container mx-auto flex justify-between items-center font-medium">
           <div className="flex items-center">
-            <a
-              href="/"
-              className="text-2xl font-semibold flex items-center text-primary"
-            >
-              Logo
-            </a>
+            <img
+              src="../../../images/PolyDesignLogo2.png"
+              alt=""
+              className="w-[140px] h-[65px]"
+            />
           </div>
           <div className="flex items-center ml-auto space-x-12">
             <ul className="md:flex space-x-12 hidden">
+              <Link className="" to="/">
+                Accueil
+              </Link>
               <NavItems />
             </ul>
-            {/* <button className="bg-stonedark hover:bg-stone text-white active:bg-stonedark font-medium py-2 px-4 transition-all duration-300 rounded hidden md:block">
-              Contact
-            </button> */}
             <Link
               className="bg-stonedark hover:bg-stone text-white active:bg-stonedark font-medium py-2 px-4 transition-all duration-300 rounded hidden md:block"
               to="/mailform"

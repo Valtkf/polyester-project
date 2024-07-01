@@ -1,6 +1,6 @@
 const NavItems = () => {
   const navItems = [
-    { link: "Accueil", path: "home" },
+    // { link: "Accueil", path: "home" },
     { link: "Présentation", path: "presentation" },
     { link: "Galerie", path: "galerie" },
   ];
