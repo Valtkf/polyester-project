@@ -30,6 +30,9 @@ const Navbar = () => {
               </Link>
               <NavItems />
             </ul>
+            <Link className="" to="/gallerypage">
+              Galerie
+            </Link>
             <Link
               className="bg-stonedark hover:bg-stone text-white active:bg-stonedark font-medium py-2 px-4 transition-all duration-300 rounded hidden md:block"
               to="/mailform"
