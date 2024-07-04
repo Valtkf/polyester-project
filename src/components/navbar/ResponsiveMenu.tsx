@@ -7,7 +7,7 @@ interface ResponsiveMenuProps {
 const ResponsiveMenu: React.FC<ResponsiveMenuProps> = ({ isMenuOpen }) => {
   const navItems = [
     { link: "Accueil", path: "home" },
-    { link: "Présentation", path: "presentation" },
+    // { link: "Présentation", path: "presentation" },
     { link: "Galerie", path: "galerie" },
     { link: "Nous Contacter", path: "contact" },
   ];

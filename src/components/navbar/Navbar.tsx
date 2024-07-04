@@ -29,16 +29,18 @@ const Navbar = () => {
                 Accueil
               </Link>
               <NavItems />
+
+              <Link className="" to="/gallerypage">
+                Galerie
+              </Link>
+
+              <Link
+                className="bg-stonedark hover:bg-stone text-white active:bg-stonedark font-medium py-2 px-4 transition-all duration-300 rounded hidden md:block"
+                to="/mailform"
+              >
+                Contact
+              </Link>
             </ul>
-            <Link className="" to="/gallerypage">
-              Galerie
-            </Link>
-            <Link
-              className="bg-stonedark hover:bg-stone text-white active:bg-stonedark font-medium py-2 px-4 transition-all duration-300 rounded hidden md:block"
-              to="/mailform"
-            >
-              Contact
-            </Link>
           </div>
           <div className="md:hidden">
             <button
