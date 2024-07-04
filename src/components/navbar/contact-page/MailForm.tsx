@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 
 export default function MailForm() {
@@ -5,7 +6,7 @@ export default function MailForm() {
     <div>
       <Navbar />
       <section className="bg-white dark:bg-gray-900 ">
-        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md pt-[150px]">
+        <div className=" py-8 lg:py-16 px-4 mx-auto max-w-screen-md pt-[150px]">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
             Contact Us
           </h2>
@@ -13,7 +14,7 @@ export default function MailForm() {
             <div>
               <label
                 htmlFor="email"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                className="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300"
               >
                 Your email
               </label>
@@ -28,7 +29,7 @@ export default function MailForm() {
             <div>
               <label
                 htmlFor="subject"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                className="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300"
               >
                 Subject
               </label>
@@ -43,7 +44,7 @@ export default function MailForm() {
             <div className="sm:col-span-2">
               <label
                 htmlFor="message"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                className="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300"
               >
                 Your message
               </label>
@@ -54,12 +55,12 @@ export default function MailForm() {
                 placeholder="Leave a comment..."
               ></textarea>
             </div>
-            <button
-              type="submit"
-              className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            <Link
+              className="bg-indigo-500 border-2 border-indigo-600 hover:bg-indigo-600 text-white active:bg-indigo-500 active:border-indigo-400 font-medium text-center py-2 px-4 w-1/4 transition-all duration-300 rounded hidden md:block"
+              to="/mailform"
             >
               Send message
-            </button>
+            </Link>
           </form>
         </div>
       </section>
