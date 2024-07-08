@@ -6,11 +6,13 @@ import { GoMail } from "react-icons/go";
 import { FaPhone } from "react-icons/fa6";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
+import Carousel from "./Carousel.tsx";
 
 const Home = () => {
   return (
     <div className="max-w-screen-2xl mt-18 overflow-hidden">
       <Navbar />
+
       <div className="hero h-[540px] xl:h-[640px] w-full bg-hero  bg-cover bg-fixed bg-no-repeat  xl:rounded-bl-[290px] relative z-10">
         <div className="flex flex-col justify-between items-center gap-10 text-center">
           <div>
@@ -140,6 +142,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Carousel />
       <div className="h-[3000px]"></div>
     </div>
   );
