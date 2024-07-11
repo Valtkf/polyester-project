@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 
-const NavItems = () => {
-  const navItems = [
-    // { link: "Accueil", path: "home" },
+interface NavItem {
+  link: string;
+  path: string;
+}
+
+const NavItems: React.FC = () => {
+  const navItems: NavItem[] = [
     // { link: "Accueil", path: "home" },
     // { link: "Galerie", path: "galerie" },
-    // { link: "Nous Contacter", path: "galerie" },
+    // { link: "Nous Contacter", path: "contact" },
   ];
 
   return (
