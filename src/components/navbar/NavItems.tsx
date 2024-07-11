@@ -1,20 +1,23 @@
+import { Link } from "react-router-dom";
+
 const NavItems = () => {
   const navItems = [
-    { link: "Accueil", path: "home" },
-    { link: "Présentation", path: "presentation" },
-    { link: "Nos Produits", path: "produits" },
+    // { link: "Accueil", path: "home" },
+    // { link: "Accueil", path: "home" },
+    // { link: "Galerie", path: "galerie" },
+    // { link: "Nous Contacter", path: "galerie" },
   ];
 
   return (
     <>
       {navItems.map(({ link, path }) => (
-        <a
+        <Link
           key={link}
-          href={path}
+          to={path}
           className="block text-primary font-medium hover:text-gray-300"
         >
           {link}
-        </a>
+        </Link>
       ))}
     </>
   );
