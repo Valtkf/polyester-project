@@ -135,7 +135,7 @@ const Home = () => {
             </div>
             <div className="max-w-[453px] order-1 xl:order-none">
               <img
-                src="../../../images/swimmingpool.jpg"
+                src="/images/swimmingpool.jpg"
                 alt="Swimming Pool"
                 className="rounded-tr-[200px] rounded-bl-[100px] rounded-br-2xl rounded-tl-2xl"
               />
