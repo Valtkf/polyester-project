@@ -1,6 +1,6 @@
-import cabines from "../../../images/cabines.jpg";
-import cabine2 from "../../../images/cabine2.jpg";
-import stand from "../../../images/stand.jpg";
+import cabines from "/images/cabines.jpg";
+import cabine2 from "/images/cabine2.jpg";
+import stand from "/images/stand.jpg";
 import ImageSlider from "./ImageSlider";
 
 const IMAGES = [cabines, cabine2, stand];

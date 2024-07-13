@@ -14,7 +14,7 @@ const Home = () => {
 
       <div className="relative z-10">
         <img
-          src="../../../images/bghomepage.jpeg"
+          src="/images/bghomepage.jpeg"
           alt="Homepage background"
           className="hero h-[540px] xl:h-[640px] w-full object-cover object-center bg-fixed xl:rounded-bl-[290px]"
         />
