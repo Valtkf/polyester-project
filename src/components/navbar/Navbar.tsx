@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="text-lg container mx-auto flex justify-between items-center font-medium">
           <div className="flex items-center">
             <img
-              src="../../../images/PolyDesignLogo2.png"
+              src="/images/PolyDesignLogo2.png"
               alt=""
               className="w-[140px] h-[65px]"
             />
