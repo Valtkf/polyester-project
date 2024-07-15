@@ -9,7 +9,7 @@ export default function GalleryPage() {
           <div>
             <img
               className="h-auto max-w-full rounded-lg object-cover object-center"
-              src="images/IMG-20240609-WA0018.jpg"
+              src="images/greenplate.jpg"
               alt="gallery-photo"
             />
           </div>
