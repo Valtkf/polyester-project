@@ -38,7 +38,7 @@ const Home = () => {
               Nous vous accompagnerons dans la réalisation du produit de vos
               rêves grâce à notre expertise.
             </p>
-            <a
+            {/* <a
               href="#"
               className="text-xl font-normal flex justify-center gap-2 font-sans hover:text-gray-400"
             >
@@ -46,7 +46,7 @@ const Home = () => {
               <div style={{ color: "#f59e0b" }} className="flex items-center">
                 <IoMdArrowRoundForward size={20} />
               </div>
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -60,15 +60,15 @@ const Home = () => {
               Découvrez les nombreuses réalisations que nous avons effectuées
               pour les clients qui nous ont fait confiance
             </p>
-            <a
-              href="#"
+            <Link
+              to="/gallerypage"
               className="text-xl font-normal flex justify-center gap-2 font-sans hover:text-gray-400"
             >
               Galerie Photo
               <div style={{ color: "#f59e0b" }} className="flex items-center">
                 <IoMdArrowRoundForward size={20} />
               </div>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -82,15 +82,15 @@ const Home = () => {
               Prenez contact avec notre équipe afin que nous puissions vous
               accompagner.
             </p>
-            <a
-              href="#"
+            <Link
+              to="/mailform"
               className="text-xl font-normal flex justify-center gap-2 font-sans hover:text-gray-400"
             >
               Nous Contacter
               <div style={{ color: "#f59e0b" }} className="flex items-center">
                 <GoMail size={25} />
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -117,7 +117,7 @@ const Home = () => {
                 </div>
                 <div className="text-center mt-10 ml-4">
                   <div className="font-normal text-lg text-gray-700">
-                    0670504090
+                    +225 07196886
                   </div>
                   <div className="font-normal text-lg text-gray-700">
                     Appelez nous
@@ -133,7 +133,7 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-            <div className="max-w-[453px] order-1 xl:order-none">
+            <div className="max-w-[453px] order-1 xl:order-none pr-4 pl-4">
               <img
                 src="/images/swimmingpool.jpg"
                 alt="Swimming Pool"
@@ -145,7 +145,7 @@ const Home = () => {
       </div>
 
       <Carousel />
-      <div className="h-[3000px]"></div>
+      {/* <div className="h-[3000px]"></div> */}
     </div>
   );
 };
