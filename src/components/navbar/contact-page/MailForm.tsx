@@ -29,10 +29,10 @@ export default function MailForm() {
 
       emailjs
         .sendForm(
-          "service_qg462ko",
-          "template_llv17o9",
+          "service_jr3fz9a",
+          "template_35krvqa",
           form.current,
-          "2GSQw18ILAthkag4P"
+          "APnho_BWdNDRpC7Ws"
         )
         .then(
           () => {
